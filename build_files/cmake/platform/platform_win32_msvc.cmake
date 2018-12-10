@@ -160,6 +160,9 @@ foreach(child ${children})
 	endif()
 endforeach()
 
+# Special path for our old embree build to be found
+list(APPEND CMAKE_PREFIX_PATH  ${CMAKE_SOURCE_DIR}/../embree-2.16.5.x64.windows)
+
 set(ZLIB_INCLUDE_DIRS ${LIBDIR}/zlib/include)
 set(ZLIB_LIBRARIES ${LIBDIR}/zlib/lib/libz_st.lib)
 set(ZLIB_INCLUDE_DIR ${LIBDIR}/zlib/include)
