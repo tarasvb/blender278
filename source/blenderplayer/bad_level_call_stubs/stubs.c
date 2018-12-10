@@ -653,6 +653,7 @@ struct RenderResult *RE_AcquireResultRead(struct Render *re) RET_NULL
 struct RenderResult *RE_AcquireResultWrite(struct Render *re) RET_NULL
 struct RenderStats *RE_GetStats(struct Render *re) RET_NULL
 struct RenderData *RE_engine_get_render_data(struct Render *re) RET_NULL
+struct RenderResult *RE_engine_get_result(struct RenderEngine *engine) RET_NULL
 void RE_engine_update_result(struct RenderEngine *engine, struct RenderResult *result) RET_NONE
 void RE_engine_update_progress(struct RenderEngine *engine, float progress) RET_NONE
 void RE_engine_set_error_message(RenderEngine *engine, const char *msg) RET_NONE
